@@ -1,1 +1,19 @@
-_general_layout.scss
+body {
+  background-color: $light-gray;
+}
+
+h1 {
+  color: $black;
+  font-size: 32px;
+  font-weight: 600px;
+}
+
+p {
+  color: $black;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+a {
+  color: $white;
+}
