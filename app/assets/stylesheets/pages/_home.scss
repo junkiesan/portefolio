@@ -18,3 +18,9 @@
 .bloc2 p {
   color: $gray-typo
 }
+
+#rotater {
+  transition: all 0.3s ease;
+  border: 0.0625em solid black;
+  border-radius: 3.75em;
+}

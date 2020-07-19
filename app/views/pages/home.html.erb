@@ -3,10 +3,32 @@
     <h1>Bienvenue sur mon portfolio</h1>
     <%= image_tag("coding-cog.svg") %>
     <h2>🏄🏻‍♂️ Julien Bouland 🧙‍♂️</h2>
+    <a href="#bloc2" class="anchor-scroll" data-class-to="#bloc2" data-scroll-end="bounce">...</a>
+    <%= image_tag("cog.svg") %>
+
+    <!-- <img id="rotater" onclick="rotate(this)" src="cog.svg"/> -->
   </div>
   <div class="bloc2">
-  <h1>Presentation</h1>
-  <p>Fresh alumni from LeWagon coding bootcamp - ready for my next challenge ! A travel enthusiast in love w/ code that enjoys being outdoors !</p>
+    <h1>Presentation</h1>
+    <p>Fresh alumni from LeWagon coding bootcamp - ready for my next challenge ! A travel enthusiast in love w/ code that enjoys being outdoors !</p>
+    <!-- <img id="rotater" onclick="rotate(this)" src="cog.svg"/> -->
+    <%= image_tag("cog.svg") %>
+  </div>
+
+  <div class="bloc3">
+  <% @project.each do |project| %>
+    <div class="card">
+      <%= cl_image_tag project.photo.key, class: "index-cards-photo" %>
+        <div class="card-body">
+          <h4> <%= project.name %> </h4>
+          <ul>
+            <li> <%= project.  %></li>
+          </ul>
+          <p> <%= project.description %> </p>
+        </div>
+      <%= image_tag("cog.svg") %>
+    </div>
+  <% end %>
   </div>
 
 </div>
