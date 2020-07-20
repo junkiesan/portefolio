@@ -14,14 +14,14 @@ puts "💥💥💥 Destroy Languages 💥💥💥"
 Language.destroy_all
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
-project_100km = Project.new(title: '100km', description: 'user14@100km.com', url: '123456')
+project_100km = Project.new(title: '100km 🗺', description: 'Super projet', url: 'http://www.100km.xyz/')
 photo = "km.png"
 project_100km.save!
 
 puts "First Project created!"
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
-truckabulous = Project.new(title: 'Truckabulous', description: 'user14@100km.com', url: '123456')
+truckabulous = Project.new(title: 'Truckabulous 🚚', description: 'Trop bien', url: 'https://truckabulous.herokuapp.com/')
 photo = "truckabulous.png"
 truckabulous.save!
 
