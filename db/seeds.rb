@@ -15,14 +15,18 @@ Language.destroy_all
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
 project_100km = Project.new(title: '100km 🗺', description: 'Super projet', url: 'http://www.100km.xyz/')
-photo = "km.png"
+#photo = "100_km.png"
+photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270354/wgzvlztmjwwquwyxy8qm.png')
+project_100km.photo.attach(io: photo, filename: 'project_100km.png', content_type: 'image/png')
 project_100km.save!
 
 puts "First Project created!"
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
 truckabulous = Project.new(title: 'Truckabulous 🚚', description: 'Trop bien', url: 'https://truckabulous.herokuapp.com/')
-photo = "truckabulous.png"
+#photo = "project_100km.png"
+photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270329/ltagjvkvftah0mqlidkv.png')
+truckabulous.photo.attach(io: photo, filename: 'truckabulous.png', content_type: 'image/png')
 truckabulous.save!
 
 puts "First Project created!"
