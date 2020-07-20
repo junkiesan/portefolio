@@ -15,17 +15,22 @@
     <%= image_tag("cog.svg") %>
   </div>
 
-<!--   <div class="bloc3">
-  <#% @project.each do |project| %>
+  <div class="bloc3">
+  <% @project.each do |project| %>
     <div class="card">
-      <#%= cl_image_tag project.photo.key, class: "index-cards-photo" %>
+      <%= cl_image_tag project.photo.key if project.photo.attached?%>
         <div class="card-body">
-          <h4> <#%= project.name %> </h4>
-          <p> <#%= project.description %> </p>
+          <h4> <%= project.title %> </h4>
+          <p> <%= project.description %> </p>
+          <a href="<%= project.description %>">Aller sur le site</a>
         </div>
       <%#= image_tag("cog.svg") %>
     </div>
-  <#% end %>
-  </div> -->
+  <% end %>
+  </div>
+
+  <div class="bloc4">
+    <p>Contactez-moi ❤️</p>
+  </div>
 
 </div>

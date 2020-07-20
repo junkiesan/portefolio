@@ -28,7 +28,7 @@ truckabulous.save!
 puts "First Project created!"
 
 ruby = Language.new(name: 'Ruby')
-photo = URI.open('https://images.itnewsinfo.com/lmi/articles/grande/000000067300.jpg')
+photo = URI.open('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png')
 ruby.photo.attach(io: photo, filename: 'ruby.png', content_type: 'image/png')
 ruby.save!
 puts "1 Languages"
