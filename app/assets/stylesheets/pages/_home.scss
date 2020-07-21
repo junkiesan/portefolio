@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&h=750&w=1260);
+  color: $yellow;
+  height: 80vh;
 }
 
 .bloc1 img {
@@ -12,14 +15,45 @@
   height: auto;
 }
 
+.bloc1 h1 {
+  color: $yellow;
+}
+
+.change-my-color {
+  fill: $yellow;
+}
 .bloc2 {
   background-color: $light-green;
+  border-radius: 5px;
 }
 
 .bloc2 p {
   color: $gray-typo
 }
 
+.bloc3 a {
+  background-color: $pink;
+  border: none;
+}
+
+.bloc3 a:hover {
+  background-color: $yellow;
+  transition: all 0.1s linear;
+  border: none;
+    &:hover {
+      color: $pink;
+    }
+}
+
+.card {
+  border-radius: 10px;
+  width: 80vh;
+}
+
+.card img{
+  width: 80vh;
+  border-radius: 10px;
+}
 #rotater {
   transition: all 0.3s ease;
   border: 0.0625em solid black;
