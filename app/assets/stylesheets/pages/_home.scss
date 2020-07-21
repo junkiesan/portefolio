@@ -10,10 +10,10 @@
   height: 80vh;
 }
 
-// .bloc1 img {
-//   width: 30vh;
-//   height: auto;
-// }
+.bloc1 img {
+  width: 30vh;
+  height: auto;
+}
 
 .bloc1 h1 {
   color: $yellow;
@@ -23,8 +23,8 @@
   fill: $yellow;
 }
 .bloc2 {
-  background-color: $light-green;
-  border-radius: 5px;
+  border: 5px solid $light-green;
+  border-radius: 15px;
 }
 
 .bloc2 p {
@@ -46,13 +46,13 @@
 }
 
 .card {
-  border-radius: 10px;
+  border-radius: 15px;
   width: 80vh;
 }
 
 .card img{
   width: 80vh;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 #rotater {
   transition: all 0.3s ease;
