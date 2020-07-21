@@ -17,8 +17,8 @@
     <%#= image_tag("cog.svg") %>
   </div>
 
+  <h3>Portfolio</h3>
   <div class="bloc3">
-    <h3>Portfolio</h3>
     <% @project.each do |project| %>
     <div class="card">
       <%= cl_image_tag project.photo.key if project.photo.attached?%>
@@ -32,7 +32,7 @@
     <% end %>
   </div>
   <div class="bloc4">
-    <a href="mailto:bouland.julien@gmail.com" class="btn btn-primary">Contactez-moi ❤️</a>
+    <a href="mailto:bouland.julien@gmail.com" target="_blank" class="btn btn-primary">Contactez-moi ❤️</a>
   </div>
   <a data-scroll href="#top" class="btn btn-primary"><i class="fa fa-arrow-circle-up"></i></a>
 
