@@ -18,6 +18,7 @@ project_100km = Project.new(title: '100km 🗺', description: 'Super projet', ur
 #photo = "100_km.png"
 photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270329/ltagjvkvftah0mqlidkv.png')
 project_100km.photo.attach(io: photo, filename: 'project_100km.png', content_type: 'image/png')
+project_100km.languages = Language.all
 project_100km.save!
 
 puts "First Project created!"
@@ -27,6 +28,8 @@ truckabulous = Project.new(title: 'Truckabulous 🚚', description: 'Trop bien',
 #photo = "project_100km.png"
 photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270354/wgzvlztmjwwquwyxy8qm.png')
 truckabulous.photo.attach(io: photo, filename: 'truckabulous.png', content_type: 'image/png')
+truckabulous.languages = Language.all
+
 truckabulous.save!
 
 puts "First Project created!"

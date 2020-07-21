@@ -1,11 +1,11 @@
 class LanguagesController < ApplicationController
-  def show
-    @language = Language.find(params[:id])
-  end
+#   def show
+#     @language = Language.find(params[:id])
+#   end
 
-private
+# private
 
-  def languages_params
-    params.require(:language).permit(:name, :photo)
-  end
+#   def languages_params
+#     params.require(:language).permit(:name, :photo)
+#   end
 end
