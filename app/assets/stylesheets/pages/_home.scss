@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .bloc1 img {
@@ -23,4 +24,10 @@
   transition: all 0.3s ease;
   border: 0.0625em solid black;
   border-radius: 3.75em;
+}
+
+.typed-title {
+  margin-left: 30%;
+  text-align: left;
+  width: 690px;
 }

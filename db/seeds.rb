@@ -14,7 +14,7 @@ puts "💥💥💥 Destroy Languages 💥💥💥"
 Language.destroy_all
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
-project_100km = Project.new(title: '100km 🗺', description: 'Super projet', url: 'http://www.100km.xyz/')
+project_100km = Project.new(title: '100km 🗺', description: 'Des idées de randonnées près de Paris, aux joies de l’itinérance en Bourgogne-Franche-Comté en passant par la découverte de la Nouvelle-Aquitaine, en France les escapades rêvées sont à portée de main.', url: 'http://www.100km.xyz/')
 #photo = "100_km.png"
 photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270329/ltagjvkvftah0mqlidkv.png')
 project_100km.photo.attach(io: photo, filename: 'project_100km.png', content_type: 'image/png')
@@ -24,7 +24,7 @@ project_100km.save!
 puts "First Project created!"
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
-truckabulous = Project.new(title: 'Truckabulous 🚚', description: 'Trop bien', url: 'https://truckabulous.herokuapp.com/')
+truckabulous = Project.new(title: 'Truckabulous 🚚', description: 'Découvrez nos camions concept et vivez une expérience personnalisée pour vos événements! Que vous fêtiez un anniversaire, un diplôme, une fête de bureau ou des vacances, nos camions concept rendront votre fête encore plus mémorable!', url: 'https://truckabulous.herokuapp.com/')
 #photo = "project_100km.png"
 photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270354/wgzvlztmjwwquwyxy8qm.png')
 truckabulous.photo.attach(io: photo, filename: 'truckabulous.png', content_type: 'image/png')
