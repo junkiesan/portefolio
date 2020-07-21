@@ -23,12 +23,19 @@
   fill: $yellow;
 }
 .bloc2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
   border: 5px solid $light-green;
   border-radius: 15px;
+  height: 50vh;
+
 }
 
 .bloc2 p {
-  color: $gray-typo
+  color: $pink
 }
 
 .bloc3 a {
