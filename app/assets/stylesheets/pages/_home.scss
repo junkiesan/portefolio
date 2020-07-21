@@ -2,18 +2,18 @@
 .bloc1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  // align-items: center;
+  // text-align: center;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&h=750&w=1260);
   color: $yellow;
   height: 80vh;
 }
 
-.bloc1 img {
-  width: 30vh;
-  height: auto;
-}
+// .bloc1 img {
+//   width: 30vh;
+//   height: auto;
+// }
 
 .bloc1 h1 {
   color: $yellow;
