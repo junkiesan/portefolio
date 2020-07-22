@@ -23,20 +23,19 @@
   fill: $yellow;
 }
 .bloc2 {
+  height: 60vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  border: 5px solid $light-green;
-  border-radius: 15px;
-  height: 50vh;
+  background-color: $white;
 
 }
 
-.bloc2 p {
-  color: $pink
-}
+// .bloc2 p {
+//   color: $pink
+// }
 
 .bloc3 {
  display: flex;
@@ -87,13 +86,14 @@
 .btn {
   background-color: $pink;
   border: none;
-}
-
-.btn a:hover {
-  background-color: $yellow;
-  transition: all 0.1s linear;
-  border: none;
-    &:hover {
-      color: $pink;
+  margin-left: 15px;
+    .btn a:hover {
+      background-color: $yellow;
+      transition: all 0.1s linear;
+      border: none;
+        &:hover {
+          color: $pink;
+        }
     }
 }
+
