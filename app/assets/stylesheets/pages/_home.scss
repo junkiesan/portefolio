@@ -64,12 +64,13 @@
   border-radius: 15px;
   width: 60vh;
   height: auto;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .card img{
   width: auto;
   height: 45vh;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 #rotater {
   transition: all 0.3s ease;

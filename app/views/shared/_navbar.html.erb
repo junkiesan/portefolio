@@ -1,7 +1,11 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon ">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://avatars2.githubusercontent.com/u/47059149?s=460&u=8cec5406db83f03c0b16346bce4b279b31b6579d&v=4" %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top <%= "changenav" if @changenav %>">
+
+  <div class="logo">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/dxmeh3in0/image/upload/v1595407071/115879858_657210361649263_3101217807536022200_n_magg4g.png", class: "imagew" %>
+    <%= image_tag "https://res.cloudinary.com/dxmeh3in0/image/upload/v1595407071/115879858_657210361649263_3101217807536022200_n_magg4g.png", class: "imageb" %>
     <% end %>
+  </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,7 +14,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="navbar nav-item">
           <a href="mailto:bouland.julien@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
           <a href="https://github.com/junkiesan" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/julien-bouland/" target="_blank"><i class="fab fa-linkedin"></i></a>

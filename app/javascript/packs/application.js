@@ -27,6 +27,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { homeType } from '../plugins/typed.js';
+import { initUpdateNavbarOnScroll } from '../components/navbar.js';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -34,6 +35,7 @@ import { homeType } from '../plugins/typed.js';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  initUpdateNavbarOnScroll();
   homeType();
   initScroll();
 });
