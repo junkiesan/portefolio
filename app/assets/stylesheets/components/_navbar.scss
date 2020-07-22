@@ -10,7 +10,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 120px;
+  width: 30vh;
 }
 
 .nav-item {
@@ -63,21 +63,21 @@
 }
 
 .imagew  {
-  display: none;
-}
-
-.changenav .imageb  {
-  display: none;
-}
-
-.changenav .imagew  {
   display: inline;
+  // width: 40vh;
+  height: auto;
+}
+
+.imageb  {
+  display: none;
 }
 
 .navbar-lewagon.active.navbar-light {
 
   .imageb {
     display: inline;
+    width: 30vh;
+    height: auto;
   }
 
   .imagew {
