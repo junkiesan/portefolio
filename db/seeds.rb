@@ -14,7 +14,7 @@ puts "💥💥💥 Destroy Languages 💥💥💥"
 Language.destroy_all
 
 puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
-project_100km = Project.new(title: '100km 🗺', description: 'Des idées de randonnées près de Paris, aux joies de l’itinérance en Bourgogne-Franche-Comté en passant par la découverte de la Nouvelle-Aquitaine, en France les escapades rêvées sont à portée de main.', url: 'http://www.100km.xyz/')
+project_100km = Project.new(title: '100km 🗺', description: '⚠️ Lancez la recherche avec Aix-en-Provence ⚠️ Des idées de randonnées près de Paris, aux joies de l’itinérance en Bourgogne-Franche-Comté en passant par la découverte de la Nouvelle-Aquitaine, en France les escapades rêvées sont à portée de main.', url: 'http://www.100km.xyz/')
 #photo = "100_km.png"
 photo = URI.open('http://res.cloudinary.com/dxmeh3in0/image/upload/v1595270329/ltagjvkvftah0mqlidkv.png')
 project_100km.photo.attach(io: photo, filename: 'project_100km.png', content_type: 'image/png')
