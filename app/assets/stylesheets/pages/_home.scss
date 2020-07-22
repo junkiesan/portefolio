@@ -141,3 +141,51 @@
     margin-bottom: 80px;
   }
 }
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+    padding-left: 120px;
+  }
+  .42 {
+    width: 100vw;
+  }
+  .bloc2 {
+    height: 100vh;
+    // margin: 15px;
+  }
+  .bloc2 p {
+    font-size: 17px;
+  }
+  .bloc3 {
+    flex-direction: row;
+  }
+  .card {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 25px;
+    padding-left: 100px;
+  }
+  .42 {
+    width: 100vw;
+  }
+  .bloc2 {
+    height: 100vh;
+    // margin: 15px;
+  }
+  .bloc2 p {
+    font-size: 15px;
+    // height: 100vh;
+    // margin: 15px;
+  }
+  .bloc3 {
+    flex-direction: row;
+  }
+  .card {
+    margin-bottom: 80px;
+  }
+}
