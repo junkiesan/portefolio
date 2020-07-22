@@ -1,3 +1,4 @@
+
 // Specific CSS for your home-page
 .bloc1 {
   display: flex;
@@ -22,6 +23,7 @@
 .change-my-color {
   fill: $yellow;
 }
+
 .bloc2 {
   height: 60vh;
   display: flex;
@@ -30,12 +32,11 @@
   flex-direction: column;
   text-align: center;
   background-color: $white;
-
 }
 
-// .bloc2 p {
-//   color: $pink
-// }
+.bloc2 p {
+  font-size: 19px;
+}
 
 .bloc3 {
  display: flex;
@@ -83,17 +84,60 @@
   width: 690px;
 }
 
-.btn {
-  background-color: $pink;
-  border: none;
-  margin-left: 15px;
+ /// MEDIA QUERIES ///
+@media (max-width: 960px) {
+  h1 {
+    font-size: 27px;
+    padding-left: 150px;
+  }
+  .42 {
+    width: 100vw;
+  }
+  .bloc2 p {
+    font-size: 20px;
+    // height: 100vh;
+    // margin: 15px;
+  }
+  .bloc3 {
+    flex-direction: row;
+  }
+}
 
-    .btn a:hover {
-      background-color: $yellow;
-      transition: all 0.1s linear;
-      border: none;
-        &:hover {
-          color: $pink;
-        }
-    }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 27px;
+    padding-left: 100px;
+  }
+  .42 {
+    width: 100vw;
+  }
+  .bloc2 p {
+    font-size: 17px;
+    // height: 100vh;
+    // margin: 15px;
+  }
+  .bloc3 {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+    padding-left: 100px;
+  }
+  .42 {
+    width: 100vw;
+  }
+  .bloc2 p {
+    font-size: 15px;
+    // height: 100vh;
+    // margin: 15px;
+  }
+  .bloc3 {
+    flex-direction: row;
+  }
+  .card {
+    margin-bottom: 80px;
+  }
 }
