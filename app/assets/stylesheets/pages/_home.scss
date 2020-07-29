@@ -90,6 +90,17 @@
   height: 25vh;
 }
 
+#first {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+}
+
+#second {
+  display: flex;
+  margin-left: 80%;
+}
+
 .typed-title {
   margin-left: 15%;
   text-align: left;
