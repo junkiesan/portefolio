@@ -1,10 +1,14 @@
-let rotateAngle = 90;
+const initScroll = () => {
 
-function rotate(image) {
-  image.setAttribute("style", "transform: rotate(" + rotateAngle + "deg)");
-  rotateAngle = rotateAngle + 90;
-}
+  const image = document.querySelector('.bloc1 img');
+  window.addEventListener("scroll", function() {
+  const deg = window.pageYOffset + 10
+  console.log(deg)
+    image.style.transform = "rotate("+deg+"deg)";
+  });
+};
 
 export { initScroll };
 
 
+window.pageYOffset

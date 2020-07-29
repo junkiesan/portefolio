@@ -28,6 +28,7 @@ import "bootstrap";
 // Internal imports, e.g:
 import { homeType } from '../plugins/typed.js';
 import { initUpdateNavbarOnScroll } from '../components/navbar.js';
+import { initScroll } from '../plugins/init_scroll.js';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
