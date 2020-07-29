@@ -32,6 +32,7 @@
   flex-direction: column;
   text-align: center;
   background-color: $white;
+  z-index: 900;
 }
 
 .bloc2 p {
@@ -43,6 +44,7 @@
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-around;
+ z-index: 900;
 
   // background-color:
 }
@@ -81,6 +83,13 @@
   border-radius: 3.75em;
 }
 
+.cog {
+  opacity: 0.5;
+  z-index: 800;
+  width: 25vw;
+  height: 25vh;
+}
+
 .typed-title {
   margin-left: 15%;
   text-align: left;
@@ -88,6 +97,7 @@
 }
 
  /// MEDIA QUERIES ///
+
 @media (max-width: 960px) {
   h1 {
     font-size: 27px;

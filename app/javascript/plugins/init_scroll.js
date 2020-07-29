@@ -1,9 +1,12 @@
 const initScroll = () => {
 
-  const image = document.querySelector('.bloc1 img');
+  const image = document.querySelector('.turn');
+//  const image = document.getElementById('cog');
+  //const image = document.querySelectorAll('.turn');
+  console.log(image)
   window.addEventListener("scroll", function() {
-  const deg = window.pageYOffset + 10
-  console.log(deg)
+  const deg = window.pageYOffset //+ 10
+ // console.log(deg)
     image.style.transform = "rotate("+deg+"deg)";
   });
 };
