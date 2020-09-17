@@ -2,4 +2,4 @@ meta_product_name: "Julien Bouland Portfolio"
 meta_title: "Julien Bouland - Portfolio de developpeur web junior"
 meta_description: "Bienvenue sur le portfolio de Julien Bouland, un developpeur web fullstack junior. Usant de Ruby et de JS pour vous en mettre plein la rétine !"
 meta_image: "cog-code.png" # should exist in `app/assets/images/`
-twitter_account: ""   # required for Twitter Cards
+twitter_account: "Junkiechan_"   # required for Twitter Cards
