@@ -34,6 +34,7 @@ truckabulous.save!
 
 puts "Second Project created!"
 
+puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
 flore = Project.new(title: 'Flore 🌱', description: '💻 Site en construction 💻 Apprenez à gérer votre jardin composez de vos nombreuses plantes. Doonez un petit nom et ne laissez plus vos plantes mourir de soif ! Découvrez et évcrivez des conseils de jardinage sur le blog. Make Plants Great Again avec Flore !', url: 'https://flore-project.herokuapp.com/')
 photo = URI.open('https://res.cloudinary.com/dxmeh3in0/image/upload/v1600356870/flore.png')
 flore.photo.attach(io: photo, filename: 'flore.png', content_type: 'image/png')
@@ -41,7 +42,7 @@ flore.languages = Language.all
 
 flore.save!
 
-puts "Second Project created!"
+puts "Third Project created!"
 
 ruby = Language.new(name: 'Ruby')
 photo = URI.open('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png')
