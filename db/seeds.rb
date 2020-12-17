@@ -34,6 +34,26 @@ truckabulous.save!
 
 puts "Second Project created!"
 
+puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
+insta = Project.new(title: 'Insta-clone 📷', description: 'Vous avez toujours voulu être propriétaire du réseau social Instagram ? Alors découvrez Deuxstagram ! Et vivez votre meilleure seconde vie, développé avec Ruby on Rails et avec amour.', url: 'https://rails-instaclone.herokuapp.com/')
+photo = URI.open('https://res.cloudinary.com/dxmeh3in0/image/upload/v1608213549/insta_clone_gunyla.png')
+insta.photo.attach(io: photo, filename: 'insta_clone.png', content_type: 'image/png')
+insta.languages = Language.all
+
+insta.save!
+
+puts "Third Project created!"
+
+puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
+bank = Project.new(title: 'EasyBank 💸', description: 'EasyBank est un challenge d intégration proposé par Frontend Challenge Mentor. Un pur plaisir à coder, en HTML/SCSS/JS et entièrement responsive !', url: 'https://easybank-landing-page-master-sooty.vercel.app/')
+photo = URI.open('https://res.cloudinary.com/dxmeh3in0/image/upload/v1608213550/easybank_ajhmac.png')
+bank.photo.attach(io: photo, filename: 'easybank.png', content_type: 'image/png')
+bank.languages = Language.all
+
+bank.save!
+
+puts "Fourth Project created!"
+
 # puts "🌚🌚🌚 Project in creation... 🌚🌚🌚"
 # flore = Project.new(title: 'Flore 🌱', description: '💻 Site en construction 💻 Apprenez à gérer votre jardin composé de vos nombreuses plantes. Donnez leur un petit nom et ne laissez plus vos plantes mourir de soif ! Découvrez et rédigez des conseils de jardinage sur le blog. Make Plants Great Again avec Flore !', url: 'https://flore-project.herokuapp.com/')
 # photo = URI.open('https://res.cloudinary.com/dxmeh3in0/image/upload/v1600356870/flore.png')
