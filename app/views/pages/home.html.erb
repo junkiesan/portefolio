@@ -19,7 +19,7 @@
       <%= cl_image_tag project.photo.key if project.photo.attached?%>
       <div class="card-body">
         <h4> <%= project.title %> </h4>
-        <p> <%= project.description %> </p>
+        <p class= "project__description"> <%= project.description %> </p>
         <a href="<%= project.url %>" target="_blank" class="btn btn-primary">Aller sur le site</a>
       </div>
       <%#= image_tag("cog.svg") %>
